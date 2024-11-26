@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>OyoPTS</title>
+</head>
+<body>
+    <div class="nav_and_hero">
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">PTS</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="action_btn">Get Started</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                    <li><a href="hero">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="#" class="action_btn">Get Started</a></li>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="hero_text">
+                    <h1>Elevate Your Commuting Experience with Pacesetter Transport Services</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quidem rerum voluptas veniam numquam corrupti quam, earum nulla sint iure ad dolore repellendus reiciendis totam amet quo mollitia, eum aut.</p>
+                </div>
+                <div class="hero_btn">
+                    <button class="hero_btn1">Explore More <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="hero_btn2">Contact Us <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>`
+        </main>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList = isOpen
+                ?'fa-solid fa-xmark'
+                :'fa-solid fa-bars';
+            }
+        </script>
+    </div>
+
+    
+    <div class="our_services">
+        <div class="services">
+            <div class="services_header">
+                <h1><span>Our Services:</span> We offer a <br>wild range of services </h1>
+                <div class="services_ht">
+                    <p>
+                        All our services are designed to suit your needs. No matter <br>the type of service you're looking for, we provide it.
+                    </p>
+                    <button> <img src="Resourses/icons/phone.png" alt="">contact us</button>
+                </div>
+            </div>
+            <div class="services_list">
+                <div class="sev intracity">
+                    <img src="Resourses/icons/transport.png" alt="">
+                    <h1>IntraCity & InterCity</h1>
+                    <p>Connect cities, towns, and rural areas in style and convenience at very affordable prices.</p>
+                    <button> learn more</button>
+                </div>
+                <div class="sev Interstate">
+                    <img src="Resourses/icons/interstate.png" alt="">
+                    <h1>Inter State</h1>
+                    <p>Connect with Cities in States outside Oyo State in personalized yet communal elegance.</p>
+                    <button> learn more</button>
+                </div>
+                <div class="sev branding">
+                    <img src="Resourses/icons/Hire.png" alt="">
+                    <h1>Hire Services</h1>
+                    <p>Reserve our comfortable metro buses for any occasion or professional use i.e company's staff bus.</p>
+                    <button> Request a quote</button>
+                </div>
+                <div class="sev intracity">
+                    <img src="Resourses/icons/branding.png" alt="">
+                    <h1>Branding</h1>
+                    <p>Let our buses serve as your mobile billboard; giving you as more reach as we travel.</p>
+                    <button> Request a quote</button>
+                </div>
+                <div class="sev intracity">
+                    <img src="Resourses/icons/carbon_delivery.png" alt="">
+                    <h1>Logistics</h1>
+                    <p>Send and receive packages through seamless, trackable, efficient, and assuring deliveries.</p>
+                    <button> learn more</button>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="companies_logo">
+            <div class="logos_header">
+                <span>Trusted<br>by</span>
+            </div>
+            <div class="logo_slides">
+                <img src="Resourses/Cocacola logo.png" alt="cocacola logo" class="con_logo">
+                <img src="Resourses/Premium Edible oil.svg" alt="premium logo" class="con_logo">
+                <img src="Resourses/Extreme logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Pepsi logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Cocacola logo.png" alt="cocacola logo" class="con_logo">
+                <img src="Resourses/Premium Edible oil.svg" alt="premium logo" class="con_logo">
+                <img src="Resourses/Extreme logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Pepsi logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Cocacola logo.png" alt="cocacola logo" class="con_logo">
+                <img src="Resourses/Premium Edible oil.svg" alt="premium logo" class="con_logo">
+                <img src="Resourses/Extreme logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Pepsi logo.png" alt="extreme logo" class="con_logo">
+            </div>
+            <div class="logo_slides">
+                <img src="Resourses/Cocacola logo.png" alt="cocacola logo" class="con_logo">
+                <img src="Resourses/Premium Edible oil.svg" alt="premium logo" class="con_logo">
+                <img src="Resourses/Extreme logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Pepsi logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Cocacola logo.png" alt="cocacola logo" class="con_logo">
+                <img src="Resourses/Premium Edible oil.svg" alt="premium logo" class="con_logo">
+                <img src="Resourses/Extreme logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Pepsi logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Cocacola logo.png" alt="cocacola logo" class="con_logo">
+                <img src="Resourses/Premium Edible oil.svg" alt="premium logo" class="con_logo">
+                <img src="Resourses/Extreme logo.png" alt="extreme logo" class="con_logo">
+                <img src="Resourses/Pepsi logo.png" alt="extreme logo" class="con_logo">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="customer_service_form">
+        <div class="cus_01">
+
+        </div>
+        <div class="cus_02">
+            <div class="cus_header">
+            <h1>Contact our team</h1>
+            <p>Got any questions about the product or scaling on our platform? Chat to our friendly team 24/7 for help.</p>
+            </div>
+            <div class="cus_form">
+                <div class="cus_first_last">
+
+                    <div class="cus_first_name cus_input fl1">
+                        <label for="first_name" class="cus_lab">First name</label>
+                        <input id="first_name" class="cus_box" type="text" placeholder="First name">
+                    </div>
+
+
+                    <div class="cus_last_name cus_input fl2">
+                        <label for="last_name" class="cus_lab">Last name</label>
+                        <input id="last_name" class="cus_box" type="text" placeholder="Last name">
+                    </div>
+
+                </div>
+
+                <div class="cus_email cus_input">
+                    <label for="email" class="cus_lab">Email</label>
+                    <input id="email" class="cus_box" type="text" placeholder="you@company.com">
+                </div>
+
+                <div class="cus_phone cus_input">
+                    <label for="phone_no" class="cus_lab">Phone number</label>
+                    <input id="phone_no" class="cus_box" type="text" placeholder="+234">
+                </div>
+
+                <div class="cus_message cus_input">
+                    <label for="message" class="cus_lab">Message</label>
+                    <textarea name="" id="message" placeholder="Leave us a message"  class="cus_box mes_box" rows="8"></textarea>
+                </div>
+            </div>
+            <button class="cus_box cus_btn">
+                Send message
+            </button>
+
+        </div>
+    </div>
+
+    
+
+    <!-- mission and vision section -->
+    <div class="mission_vision">
+        <div class="mv_inner">
+            <div class="mv_inner_1">
+
+            
+                <div class="mv_vid">
+                    <video src="Resourses/videos/omituntun card 1.mp4" autoplay muted loop playsinline>
+
+                    </video>
+                </div>
+            </div>
+
+            <div class="mv_inner_2">
+                <div class="mv_text">
+                    <div class="mission">
+                        <h1>Our Vision</h1>
+                        <span>To be a fully integrated passenger dilivery and that deliver value added logistics with peace of mind</span>
+                    </div>
+                    
+                    <div class="vision">
+                        <h1>Our Mission</h1>
+                        <span>To be the leading provider of competitive, reliable, and comfortable mass transit and effective logistics services that are time definite and highly dependable for professionalism, safety, promptness, growth and efficiency, while ensuring profitability and growth of the company and total wellbeing of its board of directors, management and entire staff</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- Testimonial section -->
+    <div class="testimonial-container">
+            <div class="header">
+                <h1>Hear What Our Satisfied Clients Have To Say ♥</h1>
+            </div>
+    
+            <div class="main-content">
+                <!-- Left Column (Image & Stats) -->
+                <div class="left-column">
+                    <img src="Resourses/images/IMG_8269.png" alt="Nature Image" class="testimonial-image">
+                    <div class="stats">
+                        <h2>1.9M+</h2>
+                    </div>
+                </div>
+    
+                <!-- Right Column (Testimonials) -->
+                <div class="right-column">
+                    <div class="testimonial-card green">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi, debitis odio odit et quisquam ducimus qui id quam, quibusdam cum quae, alias ut quos dicta nisi iste provident magni!</p>
+                        <span class="author">Willy Willy</span>
+                        <span class=" position position_green">Deputy Manager</span>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illo, magnam ex officia odit eos nihil aut saepe nam minus molestiae consequatur beatae ea amet corrupti aliquam asperiores quas nemo!</p>
+                        <span class="author">Mr Rotimi</span>
+                        <span class="position">Manager</span>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illo, magnam ex officia odit eos nihil aut saepe nam minus molestiae consequatur beatae ea amet corrupti aliquam asperiores quas nemo!</p>
+                        <span class="author">Mr Rotimi</span>
+                        <span class="position">Manager</span>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illo, magnam ex officia odit eos nihil aut saepe nam minus molestiae consequatur beatae ea amet corrupti aliquam asperiores quas nemo!</p>
+                        <span class="author">Mr Rotimi</span>
+                        <span class="position">Manager</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <p>Join 1.9M+ of Satisfied Commuters and Hires 👍 Who Trust PTS</p>
+                <button class="cta-button">Join Now</button>
+            </div>
+    </div>
+
+
+    <div class="faq">
+        <div class="faq_img">
+            <a href="faq.html"><h1>FAQ</h1></a>
+
+        </div>
+        <ul class="accordion">
+            <li>
+                <input type="checkbox" name="accordion" id="first">
+                <label for="first">Product</label>
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequatur veritatis tempore! Itaque non sit ex repellat saepe praesentium aliquid aut molestiae illo. Voluptas veritatis sunt reiciendis maxime odit omnis?</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="accordion" id="second">
+                <label for="second">Information</label>
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequatur veritatis tempore! Itaque non sit ex repellat saepe praesentium aliquid aut molestiae illo. Voluptas veritatis sunt reiciendis maxime odit omnis?</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="accordion" id="third">
+                <label for="third">Question</label>
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequatur veritatis tempore! Itaque non sit ex repellat saepe praesentium aliquid aut molestiae illo. Voluptas veritatis sunt reiciendis maxime odit omnis?</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="accordion" id="four">
+                <label for="four">Guides</label>
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequatur veritatis tempore! Itaque non sit ex repellat saepe praesentium aliquid aut molestiae illo. Voluptas veritatis sunt reiciendis maxime odit omnis?</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="blog_post_section">
+        <div class="blog_section">
+            <div class="blog_header">
+                <h1>Blog/News: Industry Insights and Thought Leadership.</h1>
+                <div class="blog_header_bt">
+                    <button> All Insight</button>
+                </div>
+            </div>
+            
+            <hr class="dotted_ends_line">
+
+            <div class="blog_post_wrapper">
+                <div class="latest_blog">
+                    <img src="Resourses/images/IMG_0949-Edit.JPG" alt="Nature Image" class="latest_blog_image">
+                        <div class="post_date">
+                            <span>September 19, 2024</span>
+                            <h1>Thought Leadership</h1>
+                            <p>Read articles and insights from our experts on how to tackle logistics challenges and leverage opportunities for growth. Our thought leadership pieces provide valuable knowledge to help you stay ahead.</p>
+                        </div>
+                </div>
+                <div class="other_posts">
+                    <div class="ot_blog blog1">
+                        <div class="ot_blog_holder">
+                            <div class="ot_blog_img_con">
+                                <img src="Resourses/images/IMG_0957.JPG" alt="" class="ot_image">
+                            </div>
+                            <div class="ot_contents">
+                                <span>September 19, 2024</span>
+                                <h1>Industry Insights:</h1>
+                                <p>Stay updated with the latest trends and best practices in logistics. Our blog features articles on industry.....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ot_blog blog2">
+                        <div class="ot_blog_holder">
+                            <div class="ot_blog_img_con">
+                                <img src="Resourses/images/IMG_0953-Edit.JPG" alt="" class="ot_image">
+                            </div>
+                            <div class="ot_contents">
+                                <span>September 19, 2024</span>
+                                <h1>Industry Insights:</h1>
+                                <p>Stay updated with the latest trends and best practices in logistics. Our blog features articles on industry.....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ot_blog blog2">
+                        <div class="ot_blog_holder">
+                            <div class="ot_blog_img_con">
+                                <img src="Resourses/images/IMG_0966.JPG" alt="" class="ot_image">
+                            </div>
+                            <div class="ot_contents">
+                                <span>September 19, 2024</span>
+                                <h1>Industry Insights:</h1>
+                                <p>Stay updated with the latest trends and best practices in logistics. Our blog features articles on industry.....</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <special-footer></special-footer>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">intracity</a></li>
+                            <li><a href="#">intercity</a></li>
+                            <li><a href="#">logistics</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_col">
+                        <h4>online service</h4>
+                        <ul>
+                            <li><a href="#">omituntun card</a></li>
+                            <li><a href="#">top up</a></li>
+                            <li><a href="#">free wifi</a></li>
+                            <li><a href="#">digital signage</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_col footer_handles">
+                        <h4>follow us</h4>
+                            <div class="social_links">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+</body>
+</html>
