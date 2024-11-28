@@ -412,8 +412,8 @@ section#hero {
 }
 
 .sev p {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     padding-bottom: 10px;
     height: 100px;
 }
@@ -461,13 +461,24 @@ section#hero {
         font-size: 28px;
     }
 
+    .services{
+        padding: 0;
+    }
+    .services_ht{
+        padding-top: 20px;
+        
+    }
+
     .services_ht p {
-        font-size: 16px;
+        display: none;
+        font-size: 2rem;
     }
 
     .services_list {
         grid-template-columns: 1fr;
         gap: 20px;
+        padding: 0px 40px;
+        padding-top: 0;
     }
 
     .sev h1 {
@@ -475,7 +486,7 @@ section#hero {
     }
 
     .sev p {
-        font-size: 10px;
+        font-size: 1rem;
     }
 
     .sev img {
@@ -576,6 +587,7 @@ section#hero {
 .cus_header{
     color: var(--white);
     width: 80%;
+    padding-left: 0.75rem;
 }
 
 .cus_input{
@@ -609,6 +621,8 @@ section#hero {
    width: 70%;
 }
 
+
+
 .cus_form{
     width: 80%;
     display: flex;
@@ -624,12 +638,13 @@ section#hero {
 .fl2{
     width: 45%;
 }
+
 .cus_box{
     border-radius: 10px;
     padding: 0.75rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    
+    border: 1px solid rgba(0, 0, 0, 0.3);  
 }
+
 
 .cus_lab{
     padding-left: 0.75rem;
@@ -647,8 +662,17 @@ section#hero {
    font-size: 1rem;
 }
 
+@media (max-width:480px) {
+    .customer_service_form{
+        display: flex;
+        flex-direction: row;
+    }
 
-
+    .cus_02{
+        padding: 0px 0;
+        justify-content: center;
+    }
+}
 
 /* faq accordion */
 .faq{
