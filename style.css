@@ -587,7 +587,7 @@ section#hero {
 .cus_header{
     color: var(--white);
     width: 80%;
-    padding-left: 0.75rem;
+    
 }
 
 .cus_input{
@@ -617,8 +617,14 @@ section#hero {
     align-items: center;
 }
 
+.cus_header h1{
+    color: var(--primary-color-extra-deep);
+    font-size: 3rem;
+}
+
 .cus_header p{
-   width: 70%;
+    font-size: 1.2rem;
+   width: 100%;
 }
 
 
@@ -663,6 +669,15 @@ section#hero {
 }
 
 @media (max-width:480px) {
+    .cus_form{
+        width: 100%;
+        padding: 20px;
+
+    }
+
+ 
+
+
     .customer_service_form{
         display: flex;
         flex-direction: row;
@@ -671,6 +686,16 @@ section#hero {
     .cus_02{
         padding: 0px 0;
         justify-content: center;
+    }
+    
+
+    .cus_first_last{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fl1 , .fl2{
+        width: 100%;
     }
 }
 
@@ -1347,7 +1372,7 @@ padding: 40px 0;
 .faq_list{
     margin: auto;
     max-width: var(--max-width);
-    height: 2113px;
+    height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -1359,17 +1384,14 @@ padding: 40px 0;
     margin-top: 50px;
 }
 
-
-
 .faq_accordion{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
     
 }
-
-
 
 .accordion_li {
     width:100%;
@@ -1392,6 +1414,23 @@ padding: 40px 0;
     justify-content: space-between;
 }
 
+/*fap page responsive*/
+@media (max-width:769px) {
+    .faq_list{
+        padding: 20px;
+    }
+    
+    .faq_header{
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 0;
+    }
+
+    .faq_header h1{
+        font-weight: 700;
+        text-align: center;
+    }
+}
 
 input[type="checkbox"]{
     display: none;
