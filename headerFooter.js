@@ -26,9 +26,21 @@ class SpecialHeader extends HTMLElement {
                 </ul>
             </div>
         </header>`;
+
+        // Add the toggle functionality
+        const toggleBtn = this.querySelector('.toggle_btn');
+        const toggleBtnIcon = this.querySelector('.toggle_btn i');
+        const dropDownMenu = this.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            toggleBtnIcon.className = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+        };
     }
 }
-
 
 class SpecialFooter extends HTMLElement {
     connectedCallback() {
