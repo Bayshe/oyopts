@@ -23,7 +23,7 @@
                 </div>
                 <div class="hero_btn">
                     <button class="hero_btn1">Book a Bus <i class="fa-solid fa-arrow-right"></i></button>
-                    <button class="hero_btn2">Contact Us <i class="fa-solid fa-arrow-right"></i></button>
+                    <a href="#reach_us"><button class="hero_btn2">Contact Us <i class="fa-solid fa-arrow-right"></i></button></a>
                 </div>
             </section>`
         </main>
@@ -62,31 +62,31 @@
                     <img src="Resourses/icons/transport.png" alt="">
                     <h1>IntraCity & InterCity</h1>
                     <p>Connect cities, towns, and rural areas in style and convenience at very affordable prices.</p>
-                    <button> learn more</button>
+                    <button> learn More</button>
                 </div>
                 <div class="sev Interstate">
                     <img src="Resourses/icons/interstate.png" alt="">
                     <h1>Inter State</h1>
-                    <p>Connect with Cities in States outside Oyo State in personalized yet communal elegance.</p>
-                    <button> learn more</button>
+                    <p>Our Inter State service offers seamless, reliable, and comfortable transportation across state lines.</p>
+                    <button> Reserve Your Seat</button>
                 </div>
                 <div class="sev branding">
                     <img src="Resourses/icons/Hire.png" alt="">
                     <h1>Hire Services</h1>
                     <p>Reserve our comfortable metro buses for any occasion or professional use i.e company's staff bus.</p>
-                    <button> Request a quote</button>
+                    <button> Request a Quote</button>
                 </div>
                 <div class="sev intracity">
                     <img src="Resourses/icons/branding.png" alt="">
                     <h1>Branding</h1>
                     <p>Let our buses serve as your mobile billboard; giving you as more reach as we travel.</p>
-                    <button> Request a quote</button>
+                    <button> Request a Quote</button>
                 </div>
                 <div class="sev intracity">
                     <img src="Resourses/icons/carbon_delivery.png" alt="">
                     <h1>Logistics</h1>
                     <p>Send and receive packages through seamless, trackable, efficient, and assuring deliveries.</p>
-                    <button> learn more</button>
+                    <button> Get Your Goods Moving</button>
                 </div>
                 
                 
@@ -128,7 +128,7 @@
 
     </div>
 
-    <div class="customer_service_form">
+    <div id="reach_us" class="customer_service_form">
         <div class="cus_01">
             <h2>Chat with us</h2>
             <span>Speak to our friendly team via live chat</span>
@@ -137,44 +137,109 @@
             </div>
         </div>
         <div class="cus_02">
-            <div class="cus_header">
-            <h1>Contact our team</h1>
-            <p>Got any questions about the product or scaling on our platform? Chat to our friendly team 24/7 for help.</p>
-            </div>
-            <div class="cus_form">
-                <div class="cus_first_last">
+            <form id="form" action="https://api.web3forms.com/submit" method="POST" class="contact form">
 
-                    <div class="cus_first_name cus_input fl1">
-                        <label for="first_name" class="cus_lab">First name</label>
-                        <input id="first_name" class="cus_box" type="text" placeholder="First name">
+                <div class="cus_header">
+                <h1>Contact our team</h1>
+                <p>Got any questions about the product or scaling on our platform? Chat to our friendly team 24/7 for help.</p>
+                </div>
+                <div class="cus_form">
+                    <input type="hidden" name="access_key" value="871a9786-3820-4574-9228-1528fb89d975">
+                    <div class="cus_first_last">
+                        <div class="cus_first_name cus_input fl1">
+                            <label for="first_name" class="cus_lab">First name</label>
+                            <input id="first_name" name="firstName" class="cus_box" type="text" placeholder="First name">
+                        </div>
+
+
+                        <div class="cus_last_name cus_input fl2">
+                            <label for="last_name" class="cus_lab">Last name</label>
+                            <input id="last_name" name="lastName" class="cus_box" type="text" placeholder="Last name">
+                        </div>
+
                     </div>
 
-
-                    <div class="cus_last_name cus_input fl2">
-                        <label for="last_name" class="cus_lab">Last name</label>
-                        <input id="last_name" class="cus_box" type="text" placeholder="Last name">
+                    <div class="cus_email cus_input">
+                        <label for="email" class="cus_lab">Email</label>
+                        <input id="email" name="email" class="cus_box" type="text" placeholder="you@company.com" required>
                     </div>
 
-                </div>
+                    <div class="cus_phone cus_input">
+                        <label for="phone_no" class="cus_lab">Phone number</label>
+                        <input id="phone_no" name="phoneNumber" class="cus_box" type="text" placeholder="+234">
+                    </div>
 
-                <div class="cus_email cus_input">
-                    <label for="email" class="cus_lab">Email</label>
-                    <input id="email" class="cus_box" type="text" placeholder="you@company.com">
+                    <div class="cus_message cus_input">
+                        <label for="message" class="cus_lab">Message</label>
+                        <textarea name="message" id="message" placeholder="Leave us a message"  class="cus_box mes_box" rows="8"></textarea>
+                    </div>
+                    <button id="submit" type="submit" class="cus_box cus_btn">
+                        Send message
+                    </button>
                 </div>
-
-                <div class="cus_phone cus_input">
-                    <label for="phone_no" class="cus_lab">Phone number</label>
-                    <input id="phone_no" class="cus_box" type="text" placeholder="+234">
-                </div>
-
-                <div class="cus_message cus_input">
-                    <label for="message" class="cus_lab">Message</label>
-                    <textarea name="" id="message" placeholder="Leave us a message"  class="cus_box mes_box" rows="8"></textarea>
+            <!-- Modal Popup -->
+            <div id="popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <p id="popup-message"></p>
+                    <button id="close-popup" class="popup-close">Close</button>
                 </div>
             </div>
-            <button class="cus_box cus_btn">
-                Send message
-            </button>
+
+            <script>
+                window.onload = function() {
+                    // Reset the form fields when the page loads
+                    document.getElementById("form").reset();
+                };
+            </script>
+
+            <script>
+                const form = document.getElementById('form');
+                const popup = document.getElementById('popup');
+                const popupMessage = document.getElementById('popup-message');
+                const closePopup = document.getElementById('close-popup');
+
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const formData = new FormData(form);
+                    const object = Object.fromEntries(formData);
+                    const json = JSON.stringify(object);
+
+                    popupMessage.textContent = "Please wait...";
+                    popup.style.display = "flex"; // Show popup
+
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: json
+                    })
+                        .then(async (response) => {
+                            let json = await response.json();
+                            if (response.status === 200) {
+                                popupMessage.innerHTML = "Thank you!<br>Your message has been sent successfully.";
+                                popupMessage.style.color = "green";
+                            } else {
+                                popupMessage.innerHTML = "Oops! Something went wrong. Please try again.";
+                                popupMessage.style.color = "red";
+                            }
+                        })
+                        .catch(error => {
+                            console.error(error);
+                            popupMessage.textContent = "An error occurred while submitting your message.";
+                            popupMessage.style.color = "red";
+                        })
+                        .finally(() => {
+                            form.reset();
+                        });
+                });
+
+                closePopup.addEventListener('click', function () {
+                    popup.style.display = "none";
+                });
+            </script>
+
 
         </div>
     </div>
