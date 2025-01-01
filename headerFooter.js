@@ -3,7 +3,7 @@ class SpecialHeader extends HTMLElement {
         this.innerHTML = `
         <header>
             <div class="navbar">
-                <div class="logo"><a href="#">PTS</a></div>
+                <div class="logo"><a href="/index.html">PTS</a></div>
                 <ul class="links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
