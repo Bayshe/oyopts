@@ -510,6 +510,11 @@ section#hero {
     .sev img {
         max-width: 40px;
     }
+
+    .sev button {
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
 /* companies logo  slide*/
@@ -616,6 +621,10 @@ section#hero {
     color: var(--white);
     width: 100%
     
+}
+
+.cus_box{
+    font-size: 18px;
 }
 
 .mHeader{
@@ -823,6 +832,7 @@ padding-top: 30px;
 
     .mHeader p{
         font-size: 16px;
+        padding: 0 20px;
     }
     
 
