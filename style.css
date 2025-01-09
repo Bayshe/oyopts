@@ -426,7 +426,7 @@ section#hero {
 }
 
 
-.sev button{
+/* .sev button{
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -436,6 +436,27 @@ section#hero {
     align-self: flex-end;
     cursor: pointer;
     
+} */
+
+
+.sev button {
+	font-size: 16px;
+	font-weight: 500;
+	padding: 16px 34px;
+	border: 0;
+	border-radius: 50px;
+	font-size: 18px;
+	color: var(--white);
+    background-color: var(--primary-color-extra-light);
+	font-weight: 500;
+	border-radius: 50px;
+	font-size: 15px;
+	font-weight: 600;
+	width: fit-content;
+	display: flex;
+	justify-content: space-around;
+	align-self: flex-end;
+	cursor: pointer;
 }
 
 .sev {
@@ -467,7 +488,7 @@ section#hero {
 }
 
 .sev img{
-    max-width: 50px;
+    max-width: 70px;
 }
 
 /* Our Services Responsive Design */
