@@ -3,7 +3,7 @@ class SpecialHeader extends HTMLElement {
         this.innerHTML = `
         <header>
             <div class="navbar">
-                <div class="logo"><a href="/index.html">PTS</a></div>
+                <div class="logo"><a href="index.html">PTS</a></div>
                 <ul class="links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -82,9 +82,9 @@ class SpecialFooter extends HTMLElement {
                         <div class="footer_col footer_handles">
                             <h4>follow us</h4>
                             <div class="social_links">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61550586621342&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/OyoPts?t=qgOnyPz427E9n7q30xoIiA&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/oyopts?igsh=a3M3YjNxbms2b3gw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
