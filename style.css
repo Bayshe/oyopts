@@ -27,7 +27,8 @@ html {
   }
 
 body {
-    background-color: var(--primary-color-light);
+    /* background-color: var(--primary-color-light); */
+    background-color: var(--white);
     font-family: var(--font-family);
 }
 
@@ -658,7 +659,7 @@ section#hero {
 
 .mBody{
     height: 100%;
-    background-color: var(--primary-color-light);
+    /* background-color: var(--primary-color-light); */
     display: flex;
     /* grid-template-columns: 1fr 1fr; */
     max-width: var(--max-width);
@@ -924,10 +925,12 @@ padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 .faq a{
     text-decoration: none;
+    color: var(--primary-color-extra-deep);
 }
 
 .faq_img h1{
@@ -1008,6 +1011,7 @@ input[type="checkbox"]{
 
     .faq_img{
         width: 100%;
+        padding: 20px 0;
     }
 
     .accordion{
@@ -1589,7 +1593,7 @@ padding: 40px 0;
     background-color: var(--white);
     justify-content: center;
     align-items: center;
-    padding: 80px 0;
+    padding-top: 150px;
 }
 
 
@@ -1675,6 +1679,7 @@ padding: 40px 0;
 @media (max-width:769px) {
     .faq_list{
         padding: 20px;
+        border-radius: 0px;
     }
     
     .faq_header{
@@ -1687,6 +1692,12 @@ padding: 40px 0;
         font-weight: 700;
         text-align: center;
     }
+
+    .faq_body{
+        padding-top: 80px;
+    }
+
+
 }
 
 input[type="checkbox"]{
@@ -1967,7 +1978,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     max-width: var(--max-width);
     margin: auto;
-    gap: 200px;
+    gap: 160px;
 }
 
 .abt_hd p{
@@ -1984,6 +1995,10 @@ footer {
     padding-top: 33px;  
 }
 
+.oltxt span {
+	font-size: 18px;
+	font-weight: 600;
+}
 
 .about_02_02{
 display: grid;
@@ -2162,7 +2177,10 @@ padding-top: 40px;
 }
 
 .olimgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 50%;
+    gap: 20px;
     height: 100%;
 }
 
@@ -2175,9 +2193,9 @@ padding-top: 40px;
     gap: 20px;
 }
 
-.oltxt span{
+/* .oltxt span{
     font-size: 14px;
-}
+} */
 
 .oltxt h1{
     font-size: 36px;
@@ -2192,10 +2210,24 @@ padding-top: 40px;
 }
 
 
-.olimgs img{
+.olimgs_01 img{
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 20px; 
+}
+
+.olimgs_02{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.olimgs_02 img{
+    width: 50%;
+    object-fit: cover;
     border-radius: 20px; 
 }
 
@@ -2299,6 +2331,7 @@ padding-top: 40px;
         flex-direction: column;
         height: 100%;
         gap: 20px;
+
     }
 
     .oltxt {
@@ -2330,8 +2363,18 @@ padding-top: 40px;
     .olimgs {
         width: 100%;
         padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr;
         height: 100%;
+        object-fit: contain;
     }
+
+    .olimgs_02{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
 
     .pat_logos {
         flex-direction: column;
@@ -2367,59 +2410,137 @@ padding-top: 40px;
 }
 
 
-/* payment test */
-
-/* Styling for form container */
-#paymentForm {
-    width: 300px;
-    margin: 0 auto;
-    height: 100%;
-   
-  }
-
-  .payform{
-    display: flex;
+/* our services page */
+.al_ser{
+    max-width: var(--max-width);
+    background-color: var(--primary-color-light);
+    height: 500px;
+    margin: auto;
+    /* position: relative; */
+    top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     justify-content: center;
-    height: 100vh ;
-    padding-top: 150px;
     align-items: center;
-  }
-  
-  /* Styling for form groups */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  /* Styling for labels */
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  /* Styling for input fields */
-  input[type="email"],
-  input[type="tel"],
-  input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Styling for submit button */
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    box-shadow: var(--shadow);
+    border: 2px solid var(--primary-color-extra-deep);
+    padding-left: 0;
+    padding-right: 20px;
+}
 
-/* end test */
+.al_ser button{
+        padding: 16px 34px;
+        border: 0;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: var(--white);
+        color: var(--primary-color-extra-deep);
+        width: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: var(--shadow);
+        border: solid 1px var(--secondary-color);
+}
+
+.ser_con{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.ser_con span{
+    padding-right: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.logis_con{
+    margin-bottom: 150px;
+}
+
+.services_01{
+    height: 400px;
+    background-color: #3b1511;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background:
+    linear-gradient(
+        rgba(121, 97, 241, 0.5), 
+        rgba(0, 0, 0, 0.9)),
+    url(./Resourses/images/IMG_0964.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* clip-path: ellipse(80% 70% at 50% 20%); */
+}
+
+.services_01 h1{
+    color: var(--white);
+    font-size: 56px;   
+}
+
+.services_01 p{
+    max-width: 900px;
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.ser_img img{
+        height: 497px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+}
+
+@media(max-width: 576px) {
+    .services_01{
+        height: 484px;
+        clip-path: none;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    .services_01 h1{
+        font-size: 32px;
+
+    }
+
+    .services_01 p{
+        font-size: 16px;
+    }
+
+    .al_ser{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 0;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+
+    .ser_con span{
+        padding: 0;
+    }
+
+    .ser_con{
+        margin: 0 20px;
+    }
+
+    .all_sev{
+        padding: 0 10px;
+    }
+
+}
