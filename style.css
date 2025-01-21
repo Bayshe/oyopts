@@ -2507,6 +2507,10 @@ padding-top: 40px;
     gap: 20px;
 }
 
+.ser_con button a{
+    color: var(--primary-color-extra-deep);
+}
+
 
 .ser_con span{
     padding-right: 40px;
