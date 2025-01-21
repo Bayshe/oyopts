@@ -37,6 +37,8 @@ $(".filter-item").click(function () {
     $(this).addClass("active-filter").siblings().removeClass("active-filter");
     });
 
+
+    
 // Header BackGround Change On Scroll
 // let header = document.querySelector("header");
 // window.addEventListener("scroll", () => {
