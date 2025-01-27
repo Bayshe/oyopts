@@ -3,14 +3,14 @@ class SpecialHeader extends HTMLElement {
         this.innerHTML = `
         <header>
             <div class="navbar">
-                <div class="logo"><a href="index.html"><img src="Resourses/Pacesetter logo.png" alt=""></a></div>
+                <div class="logo"><a><img src="Resourses/Pacesetter logo.png" alt=""></a></div>
                 <ul class="links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <a href="#" class="action_btn">Get Started</a>
+                <a href="http://ptsexpress.netlify.app" class="action_btn">Track Order</a>
                 <div class="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -22,7 +22,7 @@ class SpecialHeader extends HTMLElement {
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="action_btn">Get Started</a></li>
+                    <li><a href="http://ptsexpress.netlify.app" class="action_btn">Track Order</a></li>
                 </ul>
             </div>
         </header>`;

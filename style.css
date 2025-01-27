@@ -10,7 +10,6 @@ html {
 }
 
 
-
 :root{
     --primary-color:#FFF2CC;
     --primary-color-light:#FDF5E6;
@@ -91,7 +90,7 @@ header {
     text-decoration: none;
     color: #fff;
     transition: all 0.5s ease;
-    }
+}
 
 
 .navbar .links{
@@ -312,7 +311,8 @@ section#hero {
     }
 
     .navbar .logo a img{
-        width: 70px
+        width: 70px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1287,6 +1287,7 @@ overflow: hidden;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: none;
 }
 
 .cta-button:hover {
@@ -2259,6 +2260,7 @@ padding-top: 40px;
 
 .oltxt button{
     font-size: 16px;
+    
 }
 
 
@@ -2293,10 +2295,11 @@ padding-top: 40px;
     cursor: pointer;
     font-weight: 500;
     gap: 20px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: fit-content;
+    
 }
 
 @media(max-width: 576px) {
@@ -2912,4 +2915,92 @@ body {
     display: none; /* Hidden initially */
 }
 
+
+
+/* coming soon */
+.coming_soon{
+    display: flex;
+    flex-direction: column;
+    width: var(--max-width);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+}
+
+.coming_soon h1{
+    font-size: 8rem;
+}
+
+.coming_soon .sht_tx{
+    width: 800px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.waitlist-form input{
+    width: 300px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: 1px solid ;
+}
+
+.waitlist-form button{
+    width: 100px;
+    padding: 10px 5px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    border: 0;
+}
+
+@media (max-width: 800px)
+{
+    .coming_soon{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        gap: 20px;
+        padding: 0 40px;
+    }
+    
+    .coming_soon h1{
+        font-size: 3rem;
+    }
+    
+    .coming_soon .sht_tx{
+        width: auto;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .waitlist-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .waitlist-form input{
+        width: 300px;
+        padding: 10px 5px;
+        border-radius: 20px;
+        border: 1px solid ;
+    }
+    
+    .waitlist-form button{
+        width: 100px;
+        padding: 10px 5px;
+        background-color: var(--secondary-color);
+        border-radius: 20px;
+        border: 0;
+    }
+
+}
 
