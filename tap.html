@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TAP Payment Gateway Example</title>
+  </head>
+  <body>
+    <form id="pay-form">
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Phone</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Biller</label>
+        <input
+          type="text"
+          id="billerID"
+          name="billerID"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Product</label>
+        <input
+          type="text"
+          id="productID"
+          name="productID"
+          class="form-control"
+          required
+        />
+      </div>
+      <button
+        id="pay-btn"
+        type="button"
+        onclick="validateAndPay()"
+        class="btn btn-primary"
+      >
+        Pay
+      </button>
+    </form>
+    <div id="alert-holder"></div>
+    <script type="module" src="https://unpkg.com/tap-payment-popupjs@1.0.3/dist/umd/index.js"></script>
+    <script>
+      const api_key = "TkdLb2VUMk46ZXRoWEdJSEF0Z24xOnB1WVUzd3dvS1c4bw==";
+
+      function validateAndPay() {
+        const email = document.getElementById("email").value;
+        const amountinkobo = document.getElementById("amount").value;
+        const phone = document.getElementById("phone").value;
+        const fullname = "John Doe";
+
+        // special usecase
+        const billerID = document.getElementById("billerID").value;
+        const productID = document.getElementById("productID").value;
+        payWithTAP(email, amountinkobo, fullname, phone, billerID, productID);
+      }
+
+      function payWithTAP(
+        email,
+        amountinkobo,
+        fullname,
+        phone,
+        billerID,
+        productID
+      ) {
+        const handler = TAPPaymentPop.setup({
+          apiKey: api_key,
+          amount: amountinkobo,
+          transID: `KLMNOYZabcdefghijkl${Math.random()
+            .toString(36)
+            .slice(2)}qrstuvwxyz`,
+          email: email,
+          billerID: billerID,
+          productID: productID,
+          customPayload: {
+            fullname,
+            phone,
+            // special usecase
+            billerID,
+            productID,
+          },
+          callback: function (response) {
+            console.log(response);
+            const msg =
+              'Success. The transaction id is <b>"' +
+              response.transID +
+              '"</b>';
+            document.getElementById("alert-holder").innerHTML =
+              '<div class="alert alert-success">' + msg + "</div>";
+            document.getElementById("pay-form").reset();
+          },
+          onClose: function () {
+            const msg = "Closed. Please click the 'Pay' button to try again";
+            document.getElementById("alert-holder").innerHTML =
+              '<div class="alert alert-info">' + msg + "</div>";
+          },
+        });
+        handler.openIframe();
+      }
+    </script>
+  </body>
+</html>
