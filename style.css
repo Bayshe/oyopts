@@ -2169,7 +2169,7 @@ padding-top: 40px;
 
 .abt_pat{
     max-width: var(--max-width);
-    height: 490px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -2237,6 +2237,7 @@ padding-top: 40px;
     height: 100%;
 }
 
+
 .oltxt{
     display: flex;
     flex-direction: column;
@@ -2246,9 +2247,11 @@ padding-top: 40px;
     gap: 20px;
 }
 
+
 /* .oltxt span{
     font-size: 14px;
 } */
+
 
 .oltxt h1{
     font-size: 36px;
@@ -2260,7 +2263,6 @@ padding-top: 40px;
 
 .oltxt button{
     font-size: 16px;
-    
 }
 
 
@@ -2295,11 +2297,131 @@ padding-top: 40px;
     cursor: pointer;
     font-weight: 500;
     gap: 20px;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
+}
+
+.oltxt button a{
+    color: var(--white);
+
+}
+
+.directors_section h1{
+    max-width: var(--max-width);
+    margin: auto;
+    font-size: 36px;
+    padding-top: 50px;
+}
+
+.directors_slide {
+    /* max-width: v */
+    margin-left: 100px;
+    display: flex; /* Flex for horizontal layout */
+    gap: 40px;
+    height: 500px;
+    justify-content: flex-start; /* Align items from left */
+    align-items: center;
     
+    /* Enable horizontal scroll */
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    
+    /* Hide scrollbar (optional) */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.directors_slide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Child elements with equal width */
+.directors_slide > * {
+    flex: 1 0 280px; /* Makes all items have equal width (adjust as needed) */
+    min-width: 280px; /* Prevents items from shrinking */
+    height: 100%; /* Ensure uniform height */
+}
+
+
+.all_d {
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    justify-content: center;
+    align-items:flex-end;
+    display: flex;
+    box-shadow: var(--shadow);
+    /* border-radius: 20px; */
+}
+
+.all_d img{
+    height: 100%;
+    /* width: 100%; */
+    
+}
+
+.all_txt{
+    background-color: var(--white);
+    width: 100%;
+    padding: 20px;   
+    border-radius: 0 0 10px 10px;
+    color: var(--white);
+    background: rgba(170, 5, 5, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(20px); /* Blurred effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.all_d p{
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.all_d span{
+    font-weight: 500;
+}
+
+
+
+.finance{
+    background: url(Resourses/images/DFA.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dhr{
+    background: url(Resourses/images/adeola.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.marketin{
+    background: url(Resourses/images/toby.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ict{
+    background: url(Resourses/images/bayshe\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.ddp{
+    background: url(Resourses/images/ddp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 
 @media(max-width: 576px) {
@@ -2462,6 +2584,19 @@ padding-top: 40px;
         width: 100%;
        
     }
+
+    .directors_slide { 
+        margin-left:0;
+        padding-left: 20px;
+    }
+
+    .directors_section h1{
+        text-align: center;
+      
+        font-size: 36px;
+        padding-top: 20px;
+    }
+    
 }
 
 
@@ -3002,5 +3137,10 @@ body {
         border: 0;
     }
 
+}
+
+.pdf_year{
+    padding-top: 80px;
+    height: 100vh;
 }
 
