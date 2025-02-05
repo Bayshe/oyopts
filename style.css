@@ -141,7 +141,7 @@ transition: all 0.5s ease;
 }
 
 .dropdown_menu.open{    
-    height: 270px;
+    height: 220px;
 }
 
 .dropdown_menu li{
