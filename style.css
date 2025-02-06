@@ -2317,23 +2317,23 @@ padding-top: 40px;
 
 .directors_slide {
     /* max-width: v */
-    margin-left: 100px;
+    padding-right: 50px;
+    margin-left: 70px;
     display: flex; /* Flex for horizontal layout */
     gap: 40px;
     height: 500px;
     justify-content: flex-start; /* Align items from left */
     align-items: center;
-    
     /* Enable horizontal scroll */
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
-    
     /* Hide scrollbar (optional) */
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
 .directors_slide::-webkit-scrollbar {
     display: none;
 }
@@ -2423,6 +2423,23 @@ padding-top: 40px;
     background-position: center;
     background-repeat: no-repeat; 
 }
+
+
+.wale{
+    background: url(Resourses/images/wale.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.willy{
+    background: url(Resourses/images/willy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+
 
 @media(max-width: 576px) {
     .about_01{
